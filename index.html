@@ -19,285 +19,277 @@
     </section>
 
     <section class="main-content">
-      <p>&lt;!doctype html&gt;
-</p>
-  
-  My Parse App
-  
-  
-  <br>
+      <p><code>&lt;!doctype html&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;title&gt;My Parse App&lt;/title&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+  &lt;link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/2.3.2/css/bootstrap.min.css"&gt;
+  &lt;link rel="stylesheet" type="text/css" href="css/style.css"&gt;  
   &lt;!--[if lt IE 9]&gt;
-      
+      &lt;script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"&gt;&lt;/script&gt;
   &lt;![endif]--&gt;
-
-  
-   <div>
+&lt;/head&gt;
+  &lt;body&gt;
+   &lt;div class="container"&gt;
       &lt;!--  header --&gt;
-       
-         
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">How-to</a></li>
-            <li><a href="#">View &amp; Vote</a></li>
-            <li><a href="#">Upload</a></li>
-            <li><a href="#">Contest Rules</a></li>
-          </ul>
-         
-        
+      &lt;header&gt;
+        &lt;nav&gt;
+          &lt;ul class="menu"&gt;
+            &lt;li class="menu-item"&gt;&lt;a href="#" class="menu-link"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="menu-item"&gt;&lt;a href="#" class="menu-link"&gt;How-to&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="menu-item"&gt;&lt;a href="#" class="menu-link active"&gt;View&amp;nbsp;&amp;amp;&amp;nbsp;Vote&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="menu-item"&gt;&lt;a href="#" class="menu-link"&gt;Upload&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="menu-item"&gt;&lt;a href="#" class="menu-link"&gt;Contest Rules&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/nav&gt;
+      &lt;/header&gt; 
       &lt;!-- end of header --&gt;
       &lt;!-- sort section --&gt;
-      <div>
-        <div>
-            Sort
-            
-              Newest
-              Newest
-              Newest
-            
-        </div>
-       <div>
-         Filter
-            
-              Select
-              Select
-              Select
-            
-       </div>
-       <div>
-         
-           
-           
-         
-       </div>
-       <div></div>
-      </div>
+      &lt;div class="sort"&gt;
+        &lt;div class="sort-item"&gt;
+            &lt;label&gt;Sort&lt;/label&gt;
+            &lt;select name="sort"&gt;
+              &lt;option value="newest"&gt;Newest&lt;/option&gt;
+              &lt;option value="2"&gt;Newest&lt;/option&gt;
+              &lt;option value="3"&gt;Newest&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;
+       &lt;div class="sort-item"&gt;
+         &lt;label&gt;Filter&lt;/label&gt;
+            &lt;select name="filter"&gt;
+              &lt;option value="1"&gt;Select&lt;/option&gt;
+              &lt;option value="2"&gt;Select&lt;/option&gt;
+              &lt;option value="3"&gt;Select&lt;/option&gt;
+            &lt;/select&gt;
+       &lt;/div&gt;
+       &lt;div class="sort-item"&gt;
+         &lt;form class="search"&gt;
+           &lt;input type="search" class="search-field" placeholder="Search"&gt;
+           &lt;button type="submit" class="search-button"&gt;&lt;/button&gt;
+         &lt;/form&gt;
+       &lt;/div&gt;
+       &lt;div class="clr"&gt;&lt;/div&gt;
+      &lt;/div&gt;
       &lt;!-- end of sort section --&gt;
       &lt;!-- books container --&gt;
-      <div>
-      <div></div>
-         <ul>
-           <li>
-             <div>
-             <div><img src="img/item1.png" alt="item1" width="130" height="130"></div>
-               <div>
-                  <div>Дом Аида</div>
-                  <div>Рик Риордан</div>
-                  <div>2013</div>
-               </div>
-               <a href="#">add</a>
-               <div>added</div>
-               <div>12,235</div>
-             </div>
-           </li>
-           <li>
-             <div>
-             <div><img src="img/item2.png" alt="item1" width="130" height="130"></div>
-               <div>
-                  <div>Тень дракона</div>
-                  <div>Илона Волынская , Кирилл Кащеев</div>
-                  <div>2011</div>
-               </div>
-               <a href="#">add</a>
-               <div>added</div>
-               <div>12,235</div>
-             </div>
-           </li>
-           <li>
-             <div>
-             <div><img src="img/item3.png" alt="item1" width="130" height="130"></div>
-                <div>
-                  <div>Страхи мудреца. Книга 1</div>
-                  <div>Патрик Ротфусс</div>
-                  <div>2012</div>
-               </div>
-               <a href="#">add</a>
-               <div>added</div>
-               <div>12,235</div>
-             </div>
-           </li>
-           <li>
-             <div>
-             <div><img src="img/item3.png" alt="item1" width="130" height="130"></div>
-               <div>
-                  <div>Часодеи. Часовая битва</div>
-                  <div>Наталья Щерба</div>
-                  <div>2014</div>
-               </div>
-               <a href="#">add</a>
-               <div>added</div>
-               <div>12,235</div>
-             </div>
-           </li>
-           <li>
-             <div>
-             <div><img src="img/item1.png" alt="item1" width="130" height="130"></div>
-               <div>
-                  <div>Имя ветра</div>
-                  <div>Патрик Ротфусс</div>
-                  <div>2010</div>
-               </div>
-               <a href="#">add</a>
-               <div>added</div>
-               <div>12,235</div>
-             </div>
-           </li>
-           <li>
-             <div>
-               <div><img src="img/item4.png" alt="item1" width="130" height="130"></div>
-               <div>
-                  <div>Властелин Колец</div>
-                  <div>Дж. Р. Р. Толкин</div>
-                  <div>1954</div>
-               </div>
-               <a href="#">add</a>
-               <div>added</div>
-               <div>12,235</div>
-             </div>
-           </li>
-           <li>
-             <div>
-             <div><img src="img/item3.png" alt="item1" width="130" height="130"></div>
-               <div>
-                  <div>Гарри Поттер и Принц-полукровка</div>
-                  <div>Джоан Роулинг</div>
-                  <div>2005</div>
-               </div>
-               <a href="#">add</a>
-               <div>added</div>
-               <div>12,235</div>
-             </div>
-           </li>
-           <li>
-             <div>
-             <div><img src="img/item3.png" alt="item1" width="130" height="130"></div>
-               <div>
-                  <div>Игра престолов</div>
-                  <div>Джордж Р. Р. Мартин</div>
-                  <div>1996</div>
-               </div>
-               <a href="#">add</a>
-               <div>added</div>
-               <div>12,235</div>
-             </div>
-           </li>
-           <li>
-             <div>
-             <div><img src="img/item1.png" alt="item1" width="130" height="130"></div>
-               <div>
-                  <div>Темная сторона</div>
-                  <div>Макс Фрай</div>
-                  <div>1997</div>
-               </div>
-               <a href="#">add</a>
-               <div>added</div>
-               <div>12,235</div>
-             </div>
-           </li>
-           <li>
-             <div>
-             <div><img src="img/item2.png" alt="item1" width="130" height="130"></div>
-               <div>
-                  <div>Час Презрения</div>
-                  <div>Анджей Сапковский</div>
-                  <div>1995</div>
-               </div>
-               <a href="#">add</a>
-               <div>added</div>
-               <div>12,235</div>
-             </div>
-           </li>
-           <li>
-             <div>
-             <div><img src="img/item2.png" alt="item1" width="130" height="130"></div>
-               <div>
-                  <div>Зеленая миля</div>
-                  <div>Стивен Кинг</div>
-                  <div>2007</div>
-               </div>
-               <a href="#">add</a>
-               <div>added</div>
-               <div>12,235</div>
-             </div>
-           </li>
-           <li>
-             <div>
-             <div><img src="img/item2.png" alt="item1" width="130" height="130"></div>
-               <div>
-                  <div>Унесенные ветром</div>
-                  <div>Маргарет Митчелл</div>
-                  <div>2014</div>
-               </div>
-               <a href="#">add</a>
-               <div>added</div>
-               <div>12,235</div>
-             </div>
-           </li>
-         </ul>
-     </div>
+      &lt;div class="books-container"&gt;
+      &lt;div class="clr"&gt;&lt;/div&gt;
+         &lt;ul class="books-list row"&gt;
+           &lt;li class="span3"&gt;
+             &lt;div class="book" data-id="1"&gt;
+             &lt;div class="img-cont"&gt;&lt;img class="book-img" src="img/item1.png" alt="item1" width="130" height="130"&gt;&lt;/div&gt;
+               &lt;div class="book-info"&gt;
+                  &lt;div class="name"&gt;Дом Аида&lt;/div&gt;
+                  &lt;div class="author"&gt;Рик Риордан&lt;/div&gt;
+                  &lt;div class="year"&gt;2013&lt;/div&gt;
+               &lt;/div&gt;
+               &lt;a href="#" class="add"&gt;add&lt;/a&gt;
+               &lt;div class="added"&gt;added&lt;/div&gt;
+               &lt;div class="views"&gt;12,235&lt;/div&gt;
+             &lt;/div&gt;
+           &lt;/li&gt;
+           &lt;li class="span3"&gt;
+             &lt;div class="book" data-id="2"&gt;
+             &lt;div class="img-cont"&gt;&lt;img class="book-img" src="img/item2.png" alt="item1" width="130" height="130"&gt;&lt;/div&gt;
+               &lt;div class="book-info"&gt;
+                  &lt;div class="name"&gt;Тень дракона&lt;/div&gt;
+                  &lt;div class="author"&gt;Илона Волынская , Кирилл Кащеев&lt;/div&gt;
+                  &lt;div class="year"&gt;2011&lt;/div&gt;
+               &lt;/div&gt;
+               &lt;a href="#" class="add"&gt;add&lt;/a&gt;
+               &lt;div class="added"&gt;added&lt;/div&gt;
+               &lt;div class="views"&gt;12,235&lt;/div&gt;
+             &lt;/div&gt;
+           &lt;/li&gt;
+           &lt;li class="span3"&gt;
+             &lt;div class="book" data-id="3"&gt;
+             &lt;div class="img-cont"&gt;&lt;img class="book-img" src="img/item3.png" alt="item1" width="130" height="130"&gt;&lt;/div&gt;
+                &lt;div class="book-info"&gt;
+                  &lt;div class="name"&gt;Страхи мудреца. Книга 1&lt;/div&gt;
+                  &lt;div class="author"&gt;Патрик Ротфусс&lt;/div&gt;
+                  &lt;div class="year"&gt;2012&lt;/div&gt;
+               &lt;/div&gt;
+               &lt;a href="#" class="add"&gt;add&lt;/a&gt;
+               &lt;div class="added"&gt;added&lt;/div&gt;
+               &lt;div class="views"&gt;12,235&lt;/div&gt;
+             &lt;/div&gt;
+           &lt;/li&gt;
+           &lt;li class="span3"&gt;
+             &lt;div class="book" data-id="4"&gt;
+             &lt;div class="img-cont"&gt;&lt;img class="book-img" src="img/item3.png" alt="item1" width="130" height="130"&gt;&lt;/div&gt;
+               &lt;div class="book-info"&gt;
+                  &lt;div class="name"&gt;Часодеи. Часовая битва&lt;/div&gt;
+                  &lt;div class="author"&gt;Наталья Щерба&lt;/div&gt;
+                  &lt;div class="year"&gt;2014&lt;/div&gt;
+               &lt;/div&gt;
+               &lt;a href="#" class="add"&gt;add&lt;/a&gt;
+               &lt;div class="added"&gt;added&lt;/div&gt;
+               &lt;div class="views"&gt;12,235&lt;/div&gt;
+             &lt;/div&gt;
+           &lt;/li&gt;
+           &lt;li class="span3"&gt;
+             &lt;div class="book" data-id="5"&gt;
+             &lt;div class="img-cont"&gt;&lt;img class="book-img" src="img/item1.png" alt="item1" width="130" height="130"&gt;&lt;/div&gt;
+               &lt;div class="book-info"&gt;
+                  &lt;div class="name"&gt;Имя ветра&lt;/div&gt;
+                  &lt;div class="author"&gt;Патрик Ротфусс&lt;/div&gt;
+                  &lt;div class="year"&gt;2010&lt;/div&gt;
+               &lt;/div&gt;
+               &lt;a href="#" class="add"&gt;add&lt;/a&gt;
+               &lt;div class="added"&gt;added&lt;/div&gt;
+               &lt;div class="views"&gt;12,235&lt;/div&gt;
+             &lt;/div&gt;
+           &lt;/li&gt;
+           &lt;li class="span3"&gt;
+             &lt;div class="book" data-id="6"&gt;
+               &lt;div class="img-cont"&gt;&lt;img class="book-img" src="img/item4.png" alt="item1" width="130" height="130"&gt;&lt;/div&gt;
+               &lt;div class="book-info"&gt;
+                  &lt;div class="name"&gt;Властелин Колец&lt;/div&gt;
+                  &lt;div class="author"&gt;Дж. Р. Р. Толкин&lt;/div&gt;
+                  &lt;div class="year"&gt;1954&lt;/div&gt;
+               &lt;/div&gt;
+               &lt;a href="#" class="add"&gt;add&lt;/a&gt;
+               &lt;div class="added"&gt;added&lt;/div&gt;
+               &lt;div class="views"&gt;12,235&lt;/div&gt;
+             &lt;/div&gt;
+           &lt;/li&gt;
+           &lt;li class="span3"&gt;
+             &lt;div class="book" data-id="7"&gt;
+             &lt;div class="img-cont"&gt;&lt;img class="book-img" src="img/item3.png" alt="item1" width="130" height="130"&gt;&lt;/div&gt;
+               &lt;div class="book-info"&gt;
+                  &lt;div class="name"&gt;Гарри Поттер и Принц-полукровка&lt;/div&gt;
+                  &lt;div class="author"&gt;Джоан Роулинг&lt;/div&gt;
+                  &lt;div class="year"&gt;2005&lt;/div&gt;
+               &lt;/div&gt;
+               &lt;a href="#" class="add"&gt;add&lt;/a&gt;
+               &lt;div class="added"&gt;added&lt;/div&gt;
+               &lt;div class="views"&gt;12,235&lt;/div&gt;
+             &lt;/div&gt;
+           &lt;/li&gt;
+           &lt;li class="span3"&gt;
+             &lt;div class="book" data-id="8"&gt;
+             &lt;div class="img-cont"&gt;&lt;img class="book-img" src="img/item3.png" alt="item1" width="130" height="130"&gt;&lt;/div&gt;
+               &lt;div class="book-info"&gt;
+                  &lt;div class="name"&gt;Игра престолов&lt;/div&gt;
+                  &lt;div class="author"&gt;Джордж Р. Р. Мартин&lt;/div&gt;
+                  &lt;div class="year"&gt;1996&lt;/div&gt;
+               &lt;/div&gt;
+               &lt;a href="#" class="add"&gt;add&lt;/a&gt;
+               &lt;div class="added"&gt;added&lt;/div&gt;
+               &lt;div class="views"&gt;12,235&lt;/div&gt;
+             &lt;/div&gt;
+           &lt;/li&gt;
+           &lt;li class="span3"&gt;
+             &lt;div class="book" data-id="9"&gt;
+             &lt;div class="img-cont"&gt;&lt;img class="book-img" src="img/item1.png" alt="item1" width="130" height="130"&gt;&lt;/div&gt;
+               &lt;div class="book-info"&gt;
+                  &lt;div class="name"&gt;Темная сторона&lt;/div&gt;
+                  &lt;div class="author"&gt;Макс Фрай&lt;/div&gt;
+                  &lt;div class="year"&gt;1997&lt;/div&gt;
+               &lt;/div&gt;
+               &lt;a href="#" class="add"&gt;add&lt;/a&gt;
+               &lt;div class="added"&gt;added&lt;/div&gt;
+               &lt;div class="views"&gt;12,235&lt;/div&gt;
+             &lt;/div&gt;
+           &lt;/li&gt;
+           &lt;li class="span3"&gt;
+             &lt;div class="book" data-id="10"&gt;
+             &lt;div class="img-cont"&gt;&lt;img class="book-img" src="img/item2.png" alt="item1" width="130" height="130"&gt;&lt;/div&gt;
+               &lt;div class="book-info"&gt;
+                  &lt;div class="name"&gt;Час Презрения&lt;/div&gt;
+                  &lt;div class="author"&gt;Анджей Сапковский&lt;/div&gt;
+                  &lt;div class="year"&gt;1995&lt;/div&gt;
+               &lt;/div&gt;
+               &lt;a href="#" class="add"&gt;add&lt;/a&gt;
+               &lt;div class="added"&gt;added&lt;/div&gt;
+               &lt;div class="views"&gt;12,235&lt;/div&gt;
+             &lt;/div&gt;
+           &lt;/li&gt;
+           &lt;li class="span3"&gt;
+             &lt;div class="book" data-id="11"&gt;
+             &lt;div class="img-cont"&gt;&lt;img class="book-img" src="img/item2.png" alt="item1" width="130" height="130"&gt;&lt;/div&gt;
+               &lt;div class="book-info"&gt;
+                  &lt;div class="name"&gt;Зеленая миля&lt;/div&gt;
+                  &lt;div class="author"&gt;Стивен Кинг&lt;/div&gt;
+                  &lt;div class="year"&gt;2007&lt;/div&gt;
+               &lt;/div&gt;
+               &lt;a href="#" class="add"&gt;add&lt;/a&gt;
+               &lt;div class="added"&gt;added&lt;/div&gt;
+               &lt;div class="views"&gt;12,235&lt;/div&gt;
+             &lt;/div&gt;
+           &lt;/li&gt;
+           &lt;li class="span3"&gt;
+             &lt;div class="book" data-id="12"&gt;
+             &lt;div class="img-cont"&gt;&lt;img class="book-img" src="img/item2.png" alt="item1" width="130" height="130"&gt;&lt;/div&gt;
+               &lt;div class="book-info"&gt;
+                  &lt;div class="name"&gt;Унесенные ветром&lt;/div&gt;
+                  &lt;div class="author"&gt;Маргарет Митчелл&lt;/div&gt;
+                  &lt;div class="year"&gt;2014&lt;/div&gt;
+               &lt;/div&gt;
+               &lt;a href="#" class="add"&gt;add&lt;/a&gt;
+               &lt;div class="added"&gt;added&lt;/div&gt;
+               &lt;div class="views"&gt;12,235&lt;/div&gt;
+             &lt;/div&gt;
+           &lt;/li&gt;
+         &lt;/ul&gt;
+     &lt;/div&gt;
      &lt;!-- end of books container --&gt;
      &lt;!-- books navigation --&gt;
-     <div>
-<br>
-       <a href="#"></a>
-       <a href="#"></a>
-       <a href="#">1</a>
-       <a href="#">2</a>
-       <a href="#">3</a>
-       <a href="#">4</a>
-       <a href="#">5</a>
-       <a href="#">6</a>
-       <a href="#">7</a>
-       <a href="#"></a>
-       <a href="#"></a>
-       <div></div>
-     </div>
+     &lt;div class="books-nav"&gt;       
+       &lt;a href="#" class="begin"&gt;&lt;/a&gt;
+       &lt;a href="#" class="prev"&gt;&lt;/a&gt;
+       &lt;a href="#" class="nav-button"&gt;1&lt;/a&gt;
+       &lt;a href="#" class="nav-button"&gt;2&lt;/a&gt;
+       &lt;a href="#" class="nav-button"&gt;3&lt;/a&gt;
+       &lt;a href="#" class="nav-button"&gt;4&lt;/a&gt;
+       &lt;a href="#" class="nav-button"&gt;5&lt;/a&gt;
+       &lt;a href="#" class="nav-button"&gt;6&lt;/a&gt;
+       &lt;a href="#" class="nav-button"&gt;7&lt;/a&gt;
+       &lt;a href="#" class="next"&gt;&lt;/a&gt;
+       &lt;a href="#" class="finish"&gt;&lt;/a&gt;
+       &lt;div class="clr"&gt;&lt;/div&gt;
+     &lt;/div&gt;
      &lt;!-- end of books navigation --&gt;
      &lt;!-- my books --&gt;
-     <div>
-<br>
-       <h2>
-<a id="my-books" class="anchor" href="#my-books" aria-hidden="true"><span class="octicon octicon-link"></span></a>My books</h2>
-       <div></div>
-     </div>
+     &lt;div class="my-books"&gt;       
+       &lt;h2&gt;My books&lt;/h2&gt;
+       &lt;div class="clr"&gt;&lt;/div&gt;
+     &lt;/div&gt;
      &lt;!-- end of my books --&gt;
-     &lt;!-- prizes --&gt;<br>
-     <div> 
-      <h2>
-<a id="prizes" class="anchor" href="#prizes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Prizes</h2>
-<br>
-      <div>
-        <div>
-         <img src="img/card.png" alt="card">
-       </div>
-       <div>
-         <h2>
-<a id="two-ways-to-win" class="anchor" href="#two-ways-to-win" aria-hidden="true"><span class="octicon octicon-link"></span></a>Two ways to win</h2>
-         <p>If your photo is one of the top 20 highest-voted pictures, it will be submitted to an Panel, who will award a $250 Gift Card to the photo that best meets the contest criteria.</p>
-         <p>Plus, for every picture you upload, you are entered into the grand prize draw for a $1,000 Gift Card!</p>
-         <p>Just want to vote? Complete the one-time registration and you too will be entered into the grand prize draw!</p>
-       </div>
-      </div>
-<br>
-     </div>
+     &lt;!-- prizes --&gt;     
+     &lt;div class="prizes"&gt; 
+      &lt;h2&gt;Prizes&lt;/h2&gt;     
+      &lt;div class="inner row"&gt;
+        &lt;div class="span4"&gt;
+         &lt;img src="img/card.png" alt="card"&gt;
+       &lt;/div&gt;
+       &lt;div class="span8"&gt;
+         &lt;h2&gt;Two ways to win&lt;/h2&gt;
+         &lt;p&gt;If your photo is one of the top 20 highest-voted pictures, it will be submitted to an Panel, who will award a $250 Gift Card to the photo that best meets the contest criteria.&lt;/p&gt;
+         &lt;p&gt;Plus, for every picture you upload, you are entered into the grand prize draw for a $1,000 Gift Card!&lt;/p&gt;
+         &lt;p&gt;Just want to vote? Complete the one-time registration and you too will be entered into the grand prize draw!&lt;/p&gt;
+       &lt;/div&gt;
+      &lt;/div&gt;        
+     &lt;/div&gt;
      &lt;!-- end of prizes --&gt;
      &lt;!--  vote --&gt;
-     <div>
-     <h2>
-<a id="how-to-vote" class="anchor" href="#how-to-vote" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to Vote</h2>
-       <div>
-<br>
-         <p>Check out each submission and vote for up to 3 photos daily!</p>
-         <p>Every day, after reviewing the photo entries, vote honestly for the 3 photos you feel best meet the following criteria: Theme (50%) and Most Creative! (50%).</p>
-         <p>Each week, the 20 highest-voted photos will be submitted to an Panel, who will award a $250 Gift Card to the photo that best meets the contest criteria.</p>
-         <p>You can only vote for the same photo once per day—come back daily to vote again!</p>
-       </div>
-     </div>
+     &lt;div class="vote"&gt;
+     &lt;h2&gt;How to Vote&lt;/h2&gt;
+       &lt;div class="inner row"&gt;         
+         &lt;p&gt;Check out each submission and vote for up to 3 photos daily!&lt;/p&gt;
+         &lt;p&gt;Every day, after reviewing the photo entries, vote honestly for the 3 photos you feel best meet the following criteria: Theme (50%) and Most Creative! (50%).&lt;/p&gt;
+         &lt;p&gt;Each week, the 20 highest-voted photos will be submitted to an Panel, who will award a $250 Gift Card to the photo that best meets the contest criteria.&lt;/p&gt;
+         &lt;p&gt;You can only vote for the same photo once per day—come back daily to vote again!&lt;/p&gt;
+       &lt;/div&gt;
+     &lt;/div&gt;
      &lt;!--  end of vote --&gt;
-   </div>
-    
-    
-  
-
+   &lt;/div&gt;
+    &lt;script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="js/book.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/paulliep/StuzoTest">Stuzotest</a> is maintained by <a href="https://github.com/paulliep">paulliep</a>.</span>
