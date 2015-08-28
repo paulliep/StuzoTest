@@ -1,6 +1,5 @@
 $(function() {
-
-	/*localStorage.clear();*/
+	
 	// book
 	var Book = function(config) {
 		var config = config || {};
